@@ -1,0 +1,139 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+            "name": "AddItemIntent",
+            "slots": [
+                {
+                    "name": "attraction",
+                    "type": "ATTRACTION"
+                }
+            ],
+            "samples": [
+                "add {attraction}",
+                "add {attraction} to list",
+                "add {attraction} to my list",
+                "i want to ride {attraction}",
+                "i want to do {attraction}",
+                "i want to see {attraction}",
+                "i want to go on {attraction}",
+                "i want to go to {attraction}",
+                "i want to visit {attraction}"
+            ]
+        },
+        {
+            "name": "ListContentsIntent",
+            "slots": [],
+            "samples": [
+                "what is on my list",
+                "what animals are on my list",
+                "what rides are on my list",
+                "what attractions are on my list",
+                "what shows are on my list",
+                "what do i want to do",
+                "what do i want to ride",
+                "what do i want to see",
+                "what do i want to go on",
+                "what do i want to go to",
+                "what do i want to visit"
+            ]
+        },
+        {
+            "name": "CompleteItemIntent",
+            "slots": [
+              {
+                "name": "attraction",
+                "type": "ATTRACTION"
+              }
+            ],
+            "samples": [
+                "complete {attraction}",
+                "complete {attraction} on my list",
+                "i've done {attraction}",
+                "i've seen {attraction}",
+                "i've ridden {attraction}",
+                "i've visited {attraction}",
+                "i've gone on {attraction}",
+                "i've gone to {attraction}",
+                "mark {attraction} as complete",
+                "mark {attraction} as done"
+            ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "ATTRACTION",
+          "values": [
+            {
+              "id": "BIG_THUNDER",
+              "name": {
+                "value": "Big Thunder Mountain Railroad",
+                "synonyms": [
+                  "big thunder",
+                  "big thunder mountain",
+                  "the wildest ride in the wilderness"
+                ]
+              }
+            },
+            {
+              "id": "SPACE_MOUNTAIN",
+              "name": {
+                "value": "Space Mountain",
+                "synonyms": [
+                  "starport seventy seven"
+                ]
+              }
+            },
+            {
+              "id": "JUNGLE_CRUISE",
+              "name": {
+                "value": "Jungle Cruise",
+                "synonyms": [
+                  "river cruise",
+                  "jungle"
+                ]
+              }
+            },
+            {
+              "id": "PIRATES_OF_THE_CARIBBEAN",
+              "name": {
+                "value": "Pirates of the Caribbean",
+                "synonyms": [
+                  "pirates",
+                  "caribbean pirates"
+                ]
+              }
+            },
+            {
+              "id": "HAUNTED_MANSION",
+              "name": {
+                "value": "Haunted Mansion",
+                "synonyms": [
+                  "haunted house"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "invocationName": "list management"
+    }
+  }
+}
